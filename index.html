@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>PinkMan</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>PinkMan GamePlay</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
   <script src="TemplateData/profiler.js"></script>
   </head>
@@ -105,11 +105,12 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  canvas.style.width = "100vw";
-  canvas.style.height = "100vh";
+        canvas.requestFullscreen();
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        canvas.style.width = "100vw";
+        canvas.style.height = "100vh";
    }
 
       document.querySelector("#unity-loading-bar").style.display = "block";

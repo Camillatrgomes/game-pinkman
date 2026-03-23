@@ -1,4 +1,14 @@
-body { padding: 0; margin: 0 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* remove scroll */
+  height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
 #unity-container { position: absolute }
 #unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
